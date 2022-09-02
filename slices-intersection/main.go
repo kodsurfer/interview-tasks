@@ -6,15 +6,15 @@ func main() {
 	a := []int{1, 2, 3, 4, 5}
 	b := []int{3, 4, 5, 6, 7}
 
-	fmt.Printf("%v and %v intersection: %v \n", a, b, insersection(a, b))
+	fmt.Printf("%v and %v intersection: %v \n", a, b, intersection(a, b))
 
 	a = []int{1, 2, 1, 2, 1}
 	b = []int{3, 2, 1}
 
-	fmt.Printf("%v and %v intersection: %v \n", a, b, insersection(a, b))
+	fmt.Printf("%v and %v intersection: %v \n", a, b, intersection(a, b))
 }
 
-func insersection(a, b []int) []int {
+func intersection(a, b []int) []int {
 	cntr := make(map[int]int)
 	res := make([]int, 0)
 
